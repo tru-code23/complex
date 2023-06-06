@@ -1,0 +1,15 @@
+workflows:
+  version: 2
+  build-ios:
+    environment:
+      flutter: "2.2.0"  # Specify the desired Flutter version
+
+    scripts:
+      # Fetch dependencies
+      - flutter pub get
+
+      # Build the iOS app
+      - flutter build ios
+
+    artifacts:
+      - build/ios/iphoneos/*.app  
