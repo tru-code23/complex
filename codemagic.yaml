@@ -1,7 +1,7 @@
 workflows:
   build-ios:
     environment:
-      flutter: "2.2.0"  # Specify the desired Flutter version
+      flutter: beta
 
     scripts:
       # Fetch dependencies
